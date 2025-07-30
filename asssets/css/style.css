@@ -309,5 +309,101 @@ color: #FF6B00;
 }
 .about_card ul li{
   font-size: 20px;
+}
+/*CONTACT SECTION*/
+.contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+}
+.contact p{
+font-size: 32px;
+font-weight: 500;
+padding:50px 12px;
+}
+.contact form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.desk_input{
+  display: none;
+}
+.similar{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mob_input input,.similar input{
+  width: 327px;
+  padding: 15px 10px;
+  border-radius: 8px;
+  border: none;
+  border-bottom: 1px solid #FF6B00;
 
+}
+.mob_input input::placeholder,.similar input::placeholder, .similar textarea::placeholder{
+  font-size: 16px;
+}
+.similar textarea{
+  padding: 50px 10px;
+  border-radius: 15px;
+  border-top: none;
+  border-bottom: 1px solid #FF6B00;
+}
+.contact form button{
+  width: 190px;
+  background-color: #FF6B00;
+  padding: 12px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+}
+/*FOOTER STYLING*/
+footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color:#000000;
+  border-radius: 15px 15px 0 0;
+  padding: 25px 25px;
+  margin-top: 20px;
+  color: #ffffff;
+}
+.foot_social ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.line marquee p a{
+  text-decoration: none;
+  color: #FF6B00;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+.line marquee p i{
+  font-size: 16px;
+  font-weight: 400;
+}
+.line blockquote{
+  margin: bottom 25px; ;
+}
+
+.line span{
+  background-color: #FF6B00;
+  padding: 1px 150px;
+  width: 300px;
+  margin: 50px;
+  border-radius: 15px;
+  border-bottom: 1px solid #ffffff;
 }

@@ -29,7 +29,7 @@
 
 # 📖 Hello Codegisoft Academy <a name="about-project"></a>
 
-This is the first technical Codegisoft Academy project it tests more on Git, GitHub, GitHub Workflow and Linters.
+This is the first technical Codegisoft Academy project it tests more on Git, GitHub, Portfolio and Linters.
 
 [Portfolio] is a HTML CSS project
 
@@ -43,9 +43,9 @@ This is the first technical Codegisoft Academy project it tests more on Git, Git
 
 ### Key Features <a name="key-features"></a>
 
-- Understanding Git, GitHub and GitHub Workflow
+- Understanding Git, GitHub and Portfolio 
 - Configuring Linters
-- Creating pull requests and merging
+- Creating push requests and merging
 
 A demo link will be uploaded subsequently.
 
@@ -102,16 +102,20 @@ sh
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Bih Shanuells Ndoh
+👤 Bih Shanuells
 
-- GitHub: [ndohshanuella] (https://github.com/ndohshanuella)
+- GitHub: [ndohshanuella](https://github.com/ndohshanuella)
+
+👤 ANGEL
+
+- GitHub: [Angelmathine](https://github.com/Angelmathine)
 
  FUTURE FEATURES 
 
  ## 🔭 Future Features <a name="future-features"></a>
 
-- integration with javascript
-- Adding more html contents
+- integration with HTML
+- Adding more CSS contents
 
 ## 🤝 Contributing <a name="contributing"></a>
 
