@@ -531,6 +531,7 @@ footer {
   }
 }
 
+/* desktop version */
 @media (min-width: 1025px) {
   /* @media (min-width: 1025px) { */
   .mobile-menu,
@@ -818,8 +819,9 @@ footer {
 
   .desk_input {
     display: flex;
-    gap: 20px;
-    width: 100%;
+
+    /* gap: 20px; */
+    width: 900px;
   }
 
   .desk_input input {
@@ -832,7 +834,16 @@ footer {
     outline: none;
   }
 
-  .similar input,
+  .mob_input input,
+  .similar input {
+    width: 900px;
+  }
+
+  .similar textarea {
+    width: 900px;
+  }
+
+  /* .similar input,
   .similar textarea {
     width: 100%;
     padding: 16px 8px;
@@ -848,7 +859,7 @@ footer {
     max-width: 100%;
     font-size: 1rem;
     background: #f4f1f1;
-  }
+  } */
 
   .contact form button {
     width: 200px;
