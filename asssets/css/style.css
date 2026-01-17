@@ -1,3 +1,83 @@
+/* modal styling */
+.modal {
+  z-index: 2000;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  overflow: auto;
+  left: 0;
+  margin-right: 30px;
+}
+
+.modal-content {
+  background-color: #fff;
+  color: #222;
+  margin-top: 50px;
+  padding: 32px 24px;
+  margin-left: 20px;
+  height: auto;
+  width: 90vw;
+  box-shadow: 0 4px 2px  rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: black;
+}
+
+.modal-content ul {
+  list-style: none;
+  margin: 16px 0 0 0;
+  display: flex;
+  gap: 10px;
+}
+
+.modal-content ul li {
+  color: #222;
+  font-size: 1rem;
+  padding: 8px 14px;
+  margin-bottom: 50px;
+  border: #000 1px solid;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
+
+.modal-button {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-button button {
+  width: 124px;
+  border: none;
+  background-color: #ff6b00;
+  font-size: 15px;
+  margin-top: 20px;
+  padding: 8px;
+  color: #fff;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 3rem;
+  cursor: pointer;
+  color: black;
+}
+
+/* global styling */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +89,94 @@
 .desk_social,
 .home_desk_bg {
   display: none;
+}
+
+/* mobile-menu styling */
+.desktop-menu.active {
+  display: block;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 40px 0 0 20px;
+  background-color: #000;
+  margin-top: 32px;
+}
+
+.foot_social ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.about-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sim_card ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.diff_text ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.desktop-menu.active ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  list-style: none;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 50px;
+  color: #ffff;
+}
+
+.line marquee p a {
+  text-decoration: none;
+  color: #ff6b00;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.desktop-menu.active ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu.active p:nth-child(1) {
+  rotate: 45deg;
+  padding: 2px 20px;
+  top: 6px;
+  position: relative;
+}
+
+.mobile-menu.active p:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu.active p:nth-child(3) {
+  rotate: -45deg;
+  padding: 2px 20px;
+  top: -10px;
+  position: relative;
 }
 
 /* header styling */
@@ -29,13 +197,6 @@ header nav {
   align-items: center;
 }
 
-.logo a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 700;
-  color: #ffff;
-}
-
 .mobile-menu {
   display: flex;
   flex-direction: column;
@@ -44,10 +205,7 @@ header nav {
   gap: 5px;
 }
 
-.mobile-menu p {
-  padding: 1px 10px;
-  background-color: #fff;
-}
+
 
 /* Hero Section styling */
 .home {
@@ -70,15 +228,6 @@ header nav {
   line-height: 40px;
 }
 
-.home p {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-  padding-right: 10px;
-  line-height: 24px;
-  margin-top: 20px;
-}
-
 .home .mobile_social ul {
   display: flex;
   justify-content: center;
@@ -92,7 +241,6 @@ header nav {
   justify-content: end;
   margin-top: -220px;
 }
-
 
 /* Project Section styling */
 .projects {
@@ -119,11 +267,6 @@ header nav {
   font-size: 30px;
   font-weight: 400;
   white-space: nowrap;
-}
-
-.project_heading p {
-  background: #000;
-  padding: 1px 55px;
 }
 
 .diff_card {
@@ -162,17 +305,6 @@ header nav {
 .diff_text h3 {
   font-size: 32px;
   font-weight: 400;
-}
-
-.diff_text p {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.diff_text ul {
-  display: flex;
-  gap: 10px;
-  list-style: none;
 }
 
 .diff_text ul li {
@@ -221,18 +353,6 @@ header nav {
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
-}
-
-.sim_card p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.sim_card ul {
-  display: flex;
-  gap: 10px;
-  list-style: none;
 }
 
 .sim_card ul li {
@@ -289,14 +409,6 @@ header nav {
   font-size: 60px;
   font-weight: 700;
   color: #ff6b00;
-}
-
-.about-text p {
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-  padding-right: 10px;
-  line-height: 24px;
 }
 
 .about button {
@@ -358,15 +470,6 @@ header nav {
   line-height: 44px;
 }
 
-.about-card ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
 .about-card ul li {
   font-size: 20px;
 }
@@ -379,12 +482,6 @@ header nav {
   flex-direction: column;
   gap: 20px;
   padding: 5px;
-}
-
-.contact p {
-  font-size: 32px;
-  padding: 50px 12px;
-  font-weight: 500;
 }
 
 .contact form {
@@ -427,6 +524,8 @@ header nav {
   border-bottom: 1px solid #ff6b00;
 }
 
+
+
 .contact form button {
   width: 190px;
   background-color: #ff6b00;
@@ -437,6 +536,8 @@ header nav {
   border: none;
   border-radius: 8px;
 }
+
+
 
 /* FOOTER STYLING */
 footer {
@@ -450,19 +551,6 @@ footer {
   margin-top: 20px;
   padding: 25px 5px;
   color: #fff;
-}
-
-.foot_social ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-
-.line marquee p a {
-  text-decoration: none;
-  color: #ff6b00;
-  font-size: 16px;
-  font-weight: 400;
 }
 
 .line marquee p i {
@@ -559,14 +647,6 @@ footer {
     width: 100%;
   }
 
-  .logo a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    padding-left: 50px;
-    color: #ffff;
-  }
-
   .desktop-menu {
     display: flex;
     justify-content: center;
@@ -599,6 +679,20 @@ footer {
     gap: 56px;
     justify-content: center;
     align-items: center;
+  }
+
+  .about-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 20px;
+  }
+
+  .foot_social ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
   }
 
   .home .desk_social ul {
@@ -761,13 +855,7 @@ footer {
     margin-bottom: 20px;
   }
 
-  .about-card ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    gap: 20px;
-  }
+
 
   /* Contact Section */
 
@@ -843,24 +931,6 @@ footer {
     width: 900px;
   }
 
-  /* .similar input,
-  .similar textarea {
-    width: 100%;
-    padding: 16px 8px;
-    font-size: 1rem;
-    border: none;
-    border-bottom: 2px solid #eee;
-    background: none;
-  }
-
-  .similar textarea {
-    margin-top: 20px;
-    min-height: 100px;
-    max-width: 100%;
-    font-size: 1rem;
-    background: #f4f1f1;
-  } */
-
   .contact form button {
     width: 200px;
     padding: 16px;
@@ -871,6 +941,16 @@ footer {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+  }
+
+  /* Hover Effects */
+
+  .button:hover,
+  .contact form button:hover {
+    transition: all 0.3s ease-in-out;
+    background: #fff5e1;
+    color: #ff6b00;
+    border: 2px solid #ff6b00;
   }
 
   .mob_input {
@@ -894,19 +974,6 @@ footer {
     color: #fff;
   }
 
-  .foot_social ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
-
-  .line marquee p a {
-    text-decoration: none;
-    color: #ff6b00;
-    font-size: 16px;
-    font-weight: 400;
-  }
-
   .line marquee p i {
     font-size: 16px;
     font-weight: 400;
@@ -923,15 +990,5 @@ footer {
     margin: 50px 0;
     border-radius: 15px;
     border-bottom: 1px solid #fff;
-  }
-
-
-  /* Hover Effects */
-  button:hover,
-  .contact form button:hover {
-    transition: all 0.3s ease-in-out;
-    background: #fff5e1;
-    color: #ff6b00;
-    border: 2px solid #ff6b00;
   }
 }
